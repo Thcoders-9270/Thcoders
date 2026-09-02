@@ -1,0 +1,61 @@
+import type { TeamMember } from "@/types";
+
+export const teamMembers: TeamMember[] = [
+  {
+    id: "0",
+    name: "Tanya Bhasin",
+    role: "CEO & Managing Director",
+    avatar: "/images/avatars/tanya.png",
+    bio: "CEO driving corporate vision, strategic sales initiatives, and comprehensive company management.",
+    aboutText: "As the CEO of THCoders, Tanya brings a dynamic blend of executive leadership, strategic sales expertise, and robust company management. She is dedicated to driving business growth, forging strong client partnerships, and overseeing day-to-day operations to ensure the seamless delivery of exceptional digital solutions. Her forward-thinking approach perfectly aligns client objectives with operational excellence.",
+    highlights: ["Executive Leadership", "Strategic Sales", "Company Management"],
+    linkedinUrl: "https://www.linkedin.com/company/thcoders",
+    whatsappUrl: "https://wa.me/919999999999",
+  },
+  {
+    id: "1",
+    name: "Hitesh Bhasin",
+    role: "Managing Director",
+    avatar: "/images/avatars/hitesh.png",
+    bio: "Managing Director guiding strategic execution, technology leadership, and operational scale.",
+    aboutText: "The leader who empowers excellence with technology leadership and architectural execution. With extensive engineering experience across cloud infrastructure, distributed microservices, and product scaling, he guides cross-functional engineering teams to ship robust, mission-critical digital products with speed and precision.",
+    highlights: ["Distributed Systems", "Cloud & DevOps", "System Reliability"],
+    linkedinUrl: "https://www.linkedin.com/company/thcoders",
+    whatsappUrl: "https://wa.me/919999999999",
+  },
+  {
+    id: "2",
+    name: "Supriya Chandel",
+    role: "Manager",
+    avatar: "/images/avatars/supriya.jpeg",
+    bio: "Manager focused on ensuring project success and agile team coordination.",
+  },
+  {
+    id: "3",
+    name: "Ankit Kaushik",
+    role: "App Developer",
+    avatar: "/images/avatars/ankit.jpeg",
+    bio: "App Developer creating robust, fluid, and user-friendly mobile applications.",
+  },
+  {
+    id: "4",
+    name: "Somesh",
+    role: "3D Designer",
+    avatar: "/images/avatars/somesh.png",
+    bio: "3D Designer bringing ambitious ideas to life with photorealistic visuals.",
+  },
+  {
+    id: "5",
+    name: "Vaibhav",
+    role: "3D Designer",
+    avatar: "/images/avatars/vaibhav.jpeg",
+    bio: "3D Designer specializing in immersive and interactive graphics.",
+  },
+  {
+    id: "7",
+    name: "Pooja Punj",
+    role: "AI Developer",
+    avatar: "/images/avatars/pooja.jpeg",
+    bio: "AI Developer integrating state-of-the-art machine learning and autonomous agents.",
+  },
+];

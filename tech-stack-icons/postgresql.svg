@@ -1,0 +1,6 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+  <ellipse cx="24" cy="12" rx="14" ry="5.5"/>
+  <path d="M10 12v10c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5V12"/>
+  <path d="M10 22v10c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5V22"/>
+  <path d="M10 32v4c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5v-4"/>
+</svg>
