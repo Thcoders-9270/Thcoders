@@ -5,50 +5,51 @@ export async function POST(request: Request) {
     const data = await request.json();
     const { name, email, company, message } = data;
 
-    const portalId = process.env.HUBSPOT_PORTAL_ID;
-    const formGuid = process.env.HUBSPOT_FORM_GUID;
+    const accessToken = process.env.HUBSPOT_ACCESS_TOKEN;
 
-    // If HubSpot credentials are not configured, just return success so the frontend works
-    if (!portalId || !formGuid) {
-      console.warn('HubSpot Portal ID or Form GUID is missing. Form submission not sent to HubSpot.');
+    // If HubSpot token is not configured, just return success so the frontend works
+    if (!accessToken) {
+      console.warn('HubSpot Access Token is missing. Form submission not sent to HubSpot.');
       return NextResponse.json({ success: true, message: 'Message received (HubSpot not configured)' });
     }
 
-    // Prepare data for HubSpot Forms API
     // Splitting full name into firstname and lastname roughly
     const nameParts = (name || '').split(' ');
     const firstname = nameParts[0] || '';
     const lastname = nameParts.slice(1).join(' ') || '';
 
-    const hubspotData = {
-      fields: [
-        { objectTypeId: '0-1', name: 'email', value: email },
-        { objectTypeId: '0-1', name: 'firstname', value: firstname },
-        { objectTypeId: '0-1', name: 'lastname', value: lastname },
-        { objectTypeId: '0-2', name: 'name', value: company || '' },
-        { objectTypeId: '0-1', name: 'message', value: message || '' }
-      ],
-      context: {
-        pageUri: 'https://www.thcoders.com/contact', // Replace with your actual domain
-        pageName: 'Contact Us'
-      }
+    // Map fields to HubSpot Contact properties
+    const properties: Record<string, string> = {
+      email: email || '',
+      firstname: firstname,
+      lastname: lastname,
+      company: company || '',
+      message: message || '', // Note: 'message' must be created as a custom property in your HubSpot account
     };
 
-    const hubspotUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`;
+    const hubspotUrl = 'https://api.hubapi.com/crm/v3/objects/contacts';
 
     const response = await fetch(hubspotUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': `Bearer ${accessToken}`,
       },
-      body: JSON.stringify(hubspotData),
+      body: JSON.stringify({ properties }),
     });
 
     if (!response.ok) {
       const errorData = await response.json();
       console.error('HubSpot submission error:', errorData);
+      
+      // If contact already exists, HubSpot returns 409. You could handle updates here if you want.
+      if (response.status === 409) {
+         console.log('Contact already exists in HubSpot');
+         return NextResponse.json({ success: true, message: 'Contact already exists' });
+      }
+
       return NextResponse.json(
-        { error: 'Failed to submit to HubSpot' },
+        { error: 'Failed to create contact in HubSpot' },
         { status: response.status }
       );
     }
