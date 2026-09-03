@@ -11,6 +11,7 @@ export const mainNavigation: NavigationItem[] = [
       { label: "Websites", href: "/portfolio?category=Web App", icon: "Globe" },
       { label: "3D Interior Visualization", href: "/portfolio?category=3D Interior Visualization", icon: "Box" },
       { label: "3D Exterior Visualization", href: "/portfolio?category=3D Exterior Visualization", icon: "Box" },
+      { label: "3D AR/VR", href: "/portfolio?category=3D AR/VR", icon: "Layers" },
       { label: "All Projects", href: "/portfolio", icon: "Grid3X3" },
     ],
   },

@@ -75,6 +75,15 @@ export const portfolioItems: PortfolioItem[] = [
     tags: ["3D Exterior", "Unreal Engine 5", "Architecture", "CGI", "3D Modeling"],
     link: "/portfolio/zenith-exterior-3d",
   },
+  {
+    id: "ar-vr-showroom",
+    title: "Immersive Virtual Retail Showroom",
+    description: "Fully interactive 3D virtual reality showroom allowing customers to explore and customize products in real-time AR/VR environments.",
+    category: "3D AR/VR",
+    image: "/images/portfolio/native3d-2.jpg",
+    tags: ["AR/VR", "Virtual Reality", "Unity3D", "Interactive 3D", "Metaverse"],
+    link: "/portfolio/ar-vr-showroom",
+  },
 ];
 
 export const categories = [
@@ -82,5 +91,6 @@ export const categories = [
   "Web App", 
   "Mobile App", 
   "3D Interior Visualization", 
-  "3D Exterior Visualization"
+  "3D Exterior Visualization",
+  "3D AR/VR"
 ];
