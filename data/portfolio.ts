@@ -30,16 +30,6 @@ export const portfolioItems: PortfolioItem[] = [
     link: "/portfolio/lecture-hall-3d",
   },
   {
-    id: "blinkbond",
-    title: "BlinkBond Dating & Social App",
-    description: "A real-time location-based mobile app that matches users within dynamic 24-hour windows with tactile gesture interactions.",
-    category: "Mobile App",
-    image: "/images/portfolio/b1.png",
-    tags: ["Mobile App", "React Native", "iOS", "Android", "UI/UX"],
-    link: "/portfolio/blinkbond",
-    liveUrl: "https://play.google.com/store/apps",
-  },
-  {
     id: "mall-corridor-360",
     title: "Grand Retail Mall & Atrium Corridor",
     description: "360-degree panoramic commercial interior visualization featuring multi-story skylights, retail storefronts, and volumetric lighting simulations.",

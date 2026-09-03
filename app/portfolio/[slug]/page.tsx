@@ -110,16 +110,6 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
       "/images/portfolio/g2.png",
     ],
   },
-  "blinkbond": {
-    year: 2025,
-    liveUrl: "https://play.google.com/store/apps",
-    background: "BlinkBond is a location-based mobile dating app that eliminates endless swipe fatigue with an innovative 24-hour match expiration countdown.",
-    challenges: "Building tactile 60fps gesture physics, instant WebSockets match notifications, and location geofencing while preserving high battery efficiency.",
-    outcome: "Achieved viral user retention with real-life meetup conversions significantly outpacing traditional dating applications.",
-    gallery: [
-      "/images/portfolio/b1.png",
-    ],
-  },
   "zenith-exterior-3d": {
     year: 2026,
     background: "A landmark commercial tower exterior visualization highlighting parametric glass facade curtain walls, sky garden terraces, and dynamic urban skyline lighting.",
