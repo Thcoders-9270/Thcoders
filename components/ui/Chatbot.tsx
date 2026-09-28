@@ -185,7 +185,7 @@ export default function Chatbot() {
     try {
       const transcript = messages
         .map((msg) => {
-          const sender = msg.sender === "user" ? "User" : "Setu Bot";
+          const sender = msg.sender === "user" ? "User" : "THCoders Bot";
           const time = msg.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
           const cleanText = msg.text
             .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -498,7 +498,7 @@ export default function Chatbot() {
         onClick={handleOpenToggle}
         className={`fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none ${isOpen ? "bg-brand-dark rotate-90" : "hover:bg-brand-light"
           }`}
-        aria-label="Chat with Setu Assistant"
+        aria-label="Chat with THCoders Assistant"
       >
         {isOpen ? (
           <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -535,11 +535,11 @@ export default function Chatbot() {
         <div className="flex items-center justify-between border-b border-slate-100 bg-slate-50 px-5 py-4 rounded-t-2xl text-slate-800">
           <div className="flex items-center gap-3">
             <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-brand text-lg font-bold text-white shadow-inner">
-              S
+              T
               <span className="absolute bottom-0 right-0 h-2.5 w-2.5 rounded-full bg-brand-light border-2 border-slate-50" />
             </div>
             <div>
-              <h3 className="font-bold leading-tight text-sm">Setu Assistant</h3>
+              <h3 className="font-bold leading-tight text-sm">THCoders Assistant</h3>
               <p className="text-xs text-slate-500">Online • Product Expert</p>
             </div>
           </div>
