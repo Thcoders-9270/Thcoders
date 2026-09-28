@@ -2,14 +2,14 @@ import type { PortfolioItem } from "@/types";
 
 export const portfolioItems: PortfolioItem[] = [
   {
-    id: "teemsetu",
-    title: "TeemSetu — Workforce Management Platform",
-    description: "Everything you need to run your workforce in one place: manage employees, attendance, leaves, automated payroll, projects, tasks, and company operations from one centralized platform.",
+    id: "my-little-home",
+    title: "My Little Home — Premium E-Commerce",
+    description: "A luxury e-commerce platform for home essentials and bedding. Features a modern, bilingual (Arabic/English) interface with a seamless shopping experience and optimized product discovery.",
     category: "Web App",
-    image: "/images/portfolio/crm1.png",
-    tags: ["Next.js", "HRMS & Payroll", "SaaS Platform", "Enterprise UI", "Workforce Operations"],
-    link: "/portfolio/teemsetu",
-    liveUrl: "https://teemsetu.in",
+    image: "/images/portfolio/l1.png",
+    tags: ["E-Commerce", "Next.js", "Bilingual", "Retail", "UI/UX"],
+    link: "/portfolio/my-little-home",
+    liveUrl: "https://test.mylittlehome.com.sa/",
   },
   {
     id: "smart-factory-3d",

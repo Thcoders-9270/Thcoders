@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import { SmoothScroll } from "@/components/shared/SmoothScroll";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import Chatbot from "@/components/ui/Chatbot";
 import { LayoutClient } from "@/components/layout/LayoutClient";
 
 const fontSans = Plus_Jakarta_Sans({
@@ -73,6 +74,7 @@ export default function RootLayout({
             <Footer />
           </SmoothScroll>
         </ThemeProvider>
+        <Chatbot />
       </body>
     </html>
   );

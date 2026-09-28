@@ -58,6 +58,10 @@
   --color-th-sky: #ea580c;
   --color-th-teal: #6366f1;
   --color-th-cyan: #a855f7;
+
+  --color-brand: #6366f1;
+  --color-brand-light: #818cf8;
+  --color-brand-dark: #4f46e5;
 }
 
 :root {
