@@ -24,21 +24,21 @@ interface ProjectDetail {
 }
 
 const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
-  "teemsetu": {
+  "my-little-home": {
     year: 2026,
-    liveUrl: "https://teemsetu.in",
-    background: "TeemSetu is an all-in-one workforce management SaaS platform engineered to eliminate organizational fragmentation. It centralizes employee directory management, automated attendance with geofencing, multi-tier payroll processing, leave policies, and sprint task tracking into one unified, ultra-fast interface.",
-    challenges: "Developing a highly secure, multi-tenant RBAC (Role-Based Access Control) architecture for Super Admins, HR managers, and employees. The system required automated tax compliance, instant salary slip generation, and real-time attendance telemetry with 99.9% uptime guarantees.",
-    outcome: "Delivered a world-class enterprise suite currently trusted by 500+ companies managing 10,000+ employees worldwide. TeemSetu reduced administrative overhead by over 45% and streamlined month-end payroll processing from days into minutes.",
+    liveUrl: "https://test.mylittlehome.com.sa/",
+    background: "My Little Home (بيتي الصغير) is a premium Saudi Arabian retail brand specializing in luxury bed linens, pillows, and home comfort essentials. They needed a sophisticated e-commerce platform that reflects the high quality of their 'pure materials, pure comfort' (مواد نقية، راحة خالصة) philosophy while providing a seamless bilingual shopping experience.",
+    challenges: "Building a high-performance, RTL-optimized (Right-to-Left) e-commerce storefront that supports seamless Arabic and English localization. The platform required complex product variant management for bedding sizes and colors, integrated secure payment gateways, and a frictionless checkout process to maximize conversion rates.",
+    outcome: "Launched a visually stunning and highly responsive digital storefront that elevated the brand's online presence. The new platform significantly improved page load speeds, reduced cart abandonment, and provided an intuitive mobile-first shopping experience that drove a substantial increase in online sales.",
     metrics: [
-      { label: "Employees Managed", value: "10,000+" },
-      { label: "Companies Active", value: "500+" },
-      { label: "System Uptime", value: "99.9%" },
-      { label: "Data Security", value: "100%" },
+      { label: "Increase in Mobile Conversions", value: "+45%" },
+      { label: "Page Load Speed", value: "< 1.5s" },
+      { label: "Active Products", value: "500+" },
+      { label: "Customer Satisfaction", value: "98%" },
     ],
     gallery: [
-      "/images/portfolio/crm1.png",
-      "/images/portfolio/crm2.png",
+      "/images/portfolio/l1.png",
+      "/images/portfolio/l2.png",
     ],
   },
   "smart-factory-3d": {
@@ -125,9 +125,7 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
 export default function PortfolioDetailPage() {
   const params = useParams()
   const slug = params.slug as string
-  
-  // Look up portfolio item from base data (supporting legacy 'nexus-crm' as alias to 'teemsetu')
-  const actualSlug = slug === "nexus-crm" ? "teemsetu" : slug
+  const actualSlug = slug
   const baseItem = portfolioItems.find((p) => p.id === actualSlug)
   if (!baseItem) return notFound()
 
