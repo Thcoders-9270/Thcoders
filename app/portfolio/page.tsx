@@ -15,18 +15,33 @@ import {
   Eye, 
   Layers, 
   ExternalLink,
-  Globe
+  Globe,
+  Search
 } from "lucide-react"
 import { portfolioItems, categories } from "@/data/portfolio"
 import type { PortfolioItem } from "@/types"
 import { PageHeader } from "@/components/shared/PageHeader"
 import { cn } from "@/lib/utils"
 
+const subcategories3D = [
+  { label: "All 3D Spaces", key: "all" },
+  { label: "Auditoriums & Keynotes", key: "auditorium" },
+  { label: "Command Centers", key: "command-center" },
+  { label: "Lecture Theaters", key: "lecture-hall" },
+  { label: "Classrooms & STEM", key: "smart-classroom" },
+  { label: "Penthouses & Boardrooms", key: "penthouse" },
+  { label: "Montessori & Early Learning", key: "montessori" },
+  { label: "Data Centers & Industrial", key: "datacenter|factory" },
+  { label: "Commercial & Retail", key: "mall" },
+]
+
 function PortfolioContent() {
   const searchParams = useSearchParams()
   const initialCategory = searchParams.get("category") || "All"
   
   const [activeCategory, setActiveCategory] = useState(initialCategory)
+  const [active3DSubcat, setActive3DSubcat] = useState("all")
+  const [searchQuery, setSearchQuery] = useState("")
   const [previewItem, setPreviewItem] = useState<PortfolioItem | null>(null)
 
   useEffect(() => {
@@ -36,9 +51,25 @@ function PortfolioContent() {
     }
   }, [searchParams])
 
-  const filtered = activeCategory === "All" 
+  let filtered = activeCategory === "All" 
     ? portfolioItems 
     : portfolioItems.filter((item) => item.category === activeCategory)
+
+  if (activeCategory === "3D Interior Visualization" && active3DSubcat !== "all") {
+    const keys = active3DSubcat.split("|")
+    filtered = filtered.filter((item) => 
+      keys.some((k) => item.id.includes(k) || item.image.includes(k))
+    )
+  }
+
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase().trim()
+    filtered = filtered.filter((item) =>
+      item.title.toLowerCase().includes(q) ||
+      item.description.toLowerCase().includes(q) ||
+      item.tags.some((t) => t.toLowerCase().includes(q))
+    )
+  }
 
   return (
     <div className="min-h-screen bg-white">
@@ -50,37 +81,108 @@ function PortfolioContent() {
       <section className="py-16 sm:py-24 bg-zinc-50/60 border-t border-zinc-200/80">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           
-          {/* Category Filter Navigation Pills */}
-          <div className="flex flex-wrap items-center justify-start gap-2.5 mb-12 sm:mb-14">
-            {categories.map((cat) => {
-              const isActive = activeCategory === cat
-              const count = cat === "All" 
-                ? portfolioItems.length 
-                : portfolioItems.filter((i) => i.category === cat).length
+          {/* Top Filter & Search Controls */}
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-8">
+            {/* Category Filter Navigation Pills */}
+            <div className="flex flex-wrap items-center justify-start gap-2.5">
+              {categories.map((cat) => {
+                const isActive = activeCategory === cat
+                const count = cat === "All" 
+                  ? portfolioItems.length 
+                  : portfolioItems.filter((i) => i.category === cat).length
 
-              return (
+                return (
+                  <button
+                    key={cat}
+                    onClick={() => {
+                      setActiveCategory(cat)
+                      setActive3DSubcat("all")
+                    }}
+                    className={cn(
+                      "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 select-none shadow-xs cursor-pointer",
+                      isActive 
+                        ? "bg-zinc-900 text-white shadow-md shadow-zinc-900/10 scale-102" 
+                        : "bg-white text-zinc-600 border border-zinc-200/80 hover:bg-zinc-100 hover:text-zinc-900"
+                    )}
+                  >
+                    {cat.includes("3D") && <Box className="h-3.5 w-3.5 text-orange-500" />}
+                    <span>{cat}</span>
+                    <span className={cn(
+                      "rounded-full px-2 py-0.5 text-[10px] font-bold",
+                      isActive ? "bg-white/20 text-white" : "bg-zinc-100 text-zinc-500"
+                    )}>
+                      {count}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+
+            {/* Real-time Search Box */}
+            <div className="relative w-full lg:w-72 shrink-0">
+              <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-zinc-400 pointer-events-none" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search spaces or tags..."
+                className="w-full rounded-full border border-zinc-200/90 bg-white py-2.5 pl-10 pr-4 text-xs sm:text-sm text-zinc-800 placeholder:text-zinc-400 focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/20 shadow-xs"
+              />
+              {searchQuery && (
                 <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={cn(
-                    "inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs sm:text-sm font-semibold transition-all duration-300 select-none shadow-xs cursor-pointer",
-                    isActive 
-                      ? "bg-zinc-900 text-white shadow-md shadow-zinc-900/10 scale-102" 
-                      : "bg-white text-zinc-600 border border-zinc-200/80 hover:bg-zinc-100 hover:text-zinc-900"
-                  )}
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-zinc-400 hover:text-zinc-600"
                 >
-                  {cat.includes("3D") && <Box className="h-3.5 w-3.5 text-orange-500" />}
-                  <span>{cat}</span>
-                  <span className={cn(
-                    "rounded-full px-2 py-0.5 text-[10px] font-bold",
-                    isActive ? "bg-white/20 text-white" : "bg-zinc-100 text-zinc-500"
-                  )}>
-                    {count}
-                  </span>
+                  Clear
                 </button>
-              )
-            })}
+              )}
+            </div>
           </div>
+
+          {/* Subcategory Pills for 3D Interiors */}
+          {activeCategory === "3D Interior Visualization" && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex flex-wrap items-center gap-2 mb-10 pb-4 border-b border-zinc-200/60"
+            >
+              <span className="text-xs font-bold text-zinc-400 uppercase tracking-wider mr-1">
+                Filter Space:
+              </span>
+              {subcategories3D.map((sub) => {
+                const isActive = active3DSubcat === sub.key
+                const count = sub.key === "all"
+                  ? portfolioItems.filter((i) => i.category === "3D Interior Visualization").length
+                  : portfolioItems.filter((i) => {
+                      if (i.category !== "3D Interior Visualization") return false
+                      const keys = sub.key.split("|")
+                      return keys.some((k) => i.id.includes(k) || i.image.includes(k))
+                    }).length
+
+                return (
+                  <button
+                    key={sub.key}
+                    onClick={() => setActive3DSubcat(sub.key)}
+                    className={cn(
+                      "inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-all select-none cursor-pointer",
+                      isActive
+                        ? "bg-orange-600 text-white shadow-sm"
+                        : "bg-white text-zinc-600 border border-zinc-200/70 hover:bg-zinc-100"
+                    )}
+                  >
+                    <span>{sub.label}</span>
+                    <span className={cn(
+                      "rounded-full px-1.5 py-0.2 text-[9px] font-bold",
+                      isActive ? "bg-white/20 text-white" : "bg-zinc-100 text-zinc-400"
+                    )}>
+                      {count}
+                    </span>
+                  </button>
+                )
+              })}
+            </motion.div>
+          )}
 
           {/* Portfolio Grid */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -92,10 +194,10 @@ function PortfolioContent() {
                   <motion.div
                     key={item.id}
                     layout
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.4, delay: i * 0.05 }}
+                    transition={{ duration: 0.35, delay: Math.min((i % 9) * 0.03, 0.2) }}
                   >
                     <div className="group relative flex flex-col justify-between h-full overflow-hidden rounded-3xl bg-white border border-zinc-200/80 shadow-xs hover:shadow-2xl hover:shadow-orange-500/10 hover:border-orange-200/80 hover:-translate-y-2 transition-all duration-500">
                       

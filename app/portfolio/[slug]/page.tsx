@@ -47,8 +47,9 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
     challenges: "Simulating physical lighting conditions across sprawling warehouse square-footage with thousands of metallic surface reflections and intricate mechanical geometry without compromising render clarity or depth fidelity.",
     outcome: "Delivered stunning photorealistic 3D architectural CGI renders with custom PBR shader textures, volumetric atmospheric dust, and physically accurate raytraced lighting that successfully closed multi-million dollar industrial automation contracts.",
     gallery: [
+      "/images/interiors/360/factory-sortation-robotics-360-01.png",
+      "/images/interiors/360/factory-chemical-processing-bay-360-02.png",
       "/images/interiors/PUB_INT-FACTORY-LS-2283-SC-C003_NAV_P02.png",
-      "/images/interiors/PUB_INT-FACTORY-LS-2284-SC-C003_NAV_P01.png",
       "/images/interiors/PUB_INT-FACTORY-LS-2284-SC-C007_ROBOT_FORKLIFT_01_DET.png",
       "/images/interiors/PUB_INT-FACTORY-LS-2283-SC-C004_BATTERY_MERAMIN_01_DET.png",
     ],
@@ -59,10 +60,14 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
     challenges: "Balancing complex amphitheater line-of-sight acoustics with modern ergonomic seating, complex stepped lighting tracks, and warm wooden acoustic panel finishes.",
     outcome: "Produced cinematic architectural renders capturing both daytime natural illumination and focused night presentation stage moods, setting a new benchmark for institutional spatial design.",
     gallery: [
+      "/images/interiors/360/lecture-hall-tiered-amphitheater-360-01.png",
+      "/images/interiors/360/lecture-hall-curved-wood-arch-360-05.png",
+      "/images/interiors/360/lecture-hall-forest-green-tiered-360-08.png",
+      "/images/interiors/360/lecture-hall-blue-seating-campus-360-09.png",
+      "/images/interiors/360/lecture-hall-wood-canopy-360-06.png",
+      "/images/interiors/360/lecture-hall-podium-view-360-02.png",
       "/images/interiors/PUB_INT-LECTURE_HALL-LS-3346-SC-C003_NAV_P02.png",
       "/images/interiors/PUB_INT-LECTURE_HALL-LS-2595-SC-C005_LAPTOP_01_DET.png",
-      "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2581-SC-C001_PL_NAV_WP02.png",
-      "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2959-SC-C003_NAV_P02.png",
     ],
   },
   "mall-corridor-360": {
@@ -71,9 +76,11 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
     challenges: "Achieving seamless 360-degree panoramic realism with intricate glass refraction, marble tile reflections, and dynamic sunlight angle simulations across skylight ceilings.",
     outcome: "Enabled commercial leasing teams to pre-lease 92% of retail capacity ahead of physical groundbreaking with immersive 360 virtual walkthrough assets.",
     gallery: [
+      "/images/interiors/360/mall-atrium-promenade-360-01.png",
+      "/images/interiors/360/mall-storefronts-retail-360-02.png",
+      "/images/interiors/360/mall-smartphone-boutique-360-03.png",
       "/images/interiors/PUB_INT-MALL_CORRIDOR-LS-2278-SC-C002_360.png",
       "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2585-SC-C002_360.png",
-      "/images/interiors/PUB_INT-FACTORY-LS-2283-SC-C003_NAV_P02.png",
     ],
   },
   "smart-classroom-3d": {
@@ -82,10 +89,138 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
     challenges: "Designing multi-configuration modular furniture layouts with photorealistic PBR material textures that retain physical tactile warmth.",
     outcome: "Delivered ultra-clean spatial renders highlighting ergonomic comfort, acoustic perimeter paneling, and optimized daylight distribution.",
     gallery: [
+      "/images/interiors/360/smart-classroom-world-map-360-01.png",
+      "/images/interiors/360/smart-classroom-parquet-campus-view-360-08.png",
+      "/images/interiors/360/smart-classroom-collaborative-pod-360-03.png",
+      "/images/interiors/360/smart-classroom-bay-windows-360-02.png",
+      "/images/interiors/360/smart-classroom-stem-station-360-04.png",
+      "/images/interiors/360/smart-classroom-interactive-whiteboard-360-12.png",
       "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2581-SC-C001_PL_NAV_WP02.png",
       "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2583-SC-C004_DESK_01_DET.png",
-      "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2583-SC-C009_CHAIR_01_DET.png",
-      "/images/interiors/PUB_INT-HS_CLASSROOM-LS-2959-SC-C005_DESK_01_DET.png",
+    ],
+  },
+  "command-center-3d": {
+    year: 2026,
+    background: "Designed for a metropolitan municipal security authority, this high-tech 360-degree command and control center serves as the nerve center for real-time traffic management, surveillance dispatch, and emergency response telemetry.",
+    challenges: "Calibrating dynamic multi-screen illumination from 12-meter video walls with curved anti-glare consoles, realistic glass acoustic partitioning, and subtle reflections across raised technical flooring.",
+    outcome: "Delivered photorealistic 360 panoramic visualization that validated operator ergonomics, line-of-sight angles to primary video walls, and executive suite visibility prior to physical fit-out.",
+    metrics: [
+      { label: "Console Ergonomics", value: "99.4%" },
+      { label: "Sightline Obstruction", value: "0.0%" },
+      { label: "Video Wall Feeds", value: "24+" },
+      { label: "Lighting Simulation", value: "PBR Verified" },
+    ],
+    gallery: [
+      "/images/interiors/360/command-center-mission-control-360-01.png",
+      "/images/interiors/360/command-center-operations-hub-360-02.png",
+      "/images/interiors/360/command-center-telemetry-suite-360-03.png",
+      "/images/interiors/360/command-center-traffic-security-360-04.png",
+    ],
+  },
+  "datacenter-cooling-3d": {
+    year: 2026,
+    background: "An industrial-grade visualization of a tier-4 hyperscale data center chiller facility and turbine cooling plant engineered to maintain continuous thermal stability for high-density AI server clusters.",
+    challenges: "Accurately texturing complex mechanical assets including dual-stage turbine fans, high-voltage conduit runs, overhead cable trays, and insulated industrial chiller piping with realistic metal wear and safety signage.",
+    outcome: "Provided the engineering consortium with an immersive architectural proof-of-concept that expedited mechanical approvals and demonstrated optimal maintenance clearance zones.",
+    metrics: [
+      { label: "Cooling Airflow Fidelity", value: "CFD Aligned" },
+      { label: "Mechanical Assets", value: "1,200+" },
+      { label: "Shader Accuracy", value: "100% PBR" },
+      { label: "Stakeholder Approval", value: "1st Pass" },
+    ],
+    gallery: [
+      "/images/interiors/360/datacenter-turbine-ventilation-360-01.png",
+      "/images/interiors/360/datacenter-chiller-infrastructure-360-02.png",
+    ],
+  },
+  "contemporary-gallery-3d": {
+    year: 2026,
+    background: "A bespoke architectural pavilion created for an international modern art foundation, combining undulating curved white partition walls with expansive daylight integration and museum-grade track illumination.",
+    challenges: "Simulating diffuse daylight distribution alongside focused 3000K museum track spotlights without color bleed or blowout, while preserving tactile fidelity on polished Calacatta marble flooring.",
+    outcome: "Created a tranquil, sophisticated virtual gallery space that served as the digital twin for international curated exhibitions and virtual vernissage walkthroughs.",
+    metrics: [
+      { label: "Color Rendering Index", value: "CRI 98+" },
+      { label: "Luminance Balance", value: "Balanced" },
+      { label: "Exhibition Capacity", value: "35 Artworks" },
+      { label: "Virtual Engagement", value: "+210%" },
+    ],
+    gallery: [
+      "/images/interiors/360/art-gallery-exhibition-hall-360-01.png",
+    ],
+  },
+  "broadcast-studio-3d": {
+    year: 2026,
+    background: "An executive broadcast facility and talk-show studio designed for premier media networks, featuring panoramic curved bay windows overlooking a metropolitan skyline, fluted acoustic timber walls, and intimate stage seating.",
+    challenges: "Balancing intense professional broadcast key lighting with high-contrast exterior skyline daylight, avoiding glare on digital broadcast backdrops and managing studio acoustics.",
+    outcome: "Delivered a signature broadcast studio aesthetic that blends modern Scandinavian warmth with high-tech media capabilities, adopted as the network's flagship studio design.",
+    metrics: [
+      { label: "Audio Reverberation", value: "< 0.35s" },
+      { label: "Skyline Panorama", value: "180° Curved" },
+      { label: "Camera Coverage", value: "6 Angles" },
+      { label: "Brand Impact", value: "Flagship" },
+    ],
+    gallery: [
+      "/images/interiors/360/broadcast-studio-panoramic-stage-360-01.png",
+      "/images/interiors/360/broadcast-studio-recording-suite-360-02.png",
+    ],
+  },
+  "montessori-learning-3d": {
+    year: 2025,
+    background: "An early childhood educational environment designed under authentic Montessori principles, featuring organic cloud ceiling contours, kid-accessible wooden shelving, modular hexagonal activity tables, and abundant soft natural daylight.",
+    challenges: "Designing child-ergonomic spatial proportions, soft tactile material textures, non-toxic wood shaders, and playful acoustic ceiling baffles that nurture creativity without visual overstimulation.",
+    outcome: "Produced an inspiring, welcoming interior visualization that won unanimous praise from educational boards and served as the design standard for 15 upcoming preschool campuses.",
+    metrics: [
+      { label: "Child Ergonomics", value: "Montessori Std" },
+      { label: "Daylight Ingress", value: "+60%" },
+      { label: "Acoustic Dampening", value: "-18 dB" },
+      { label: "Campuses Commissioned", value: "15" },
+    ],
+    gallery: [
+      "/images/interiors/360/montessori-learning-studio-360-01.png",
+      "/images/interiors/360/montessori-kindergarten-classroom-360-02.png",
+      "/images/interiors/360/montessori-activity-hub-360-03.png",
+      "/images/interiors/360/montessori-play-center-360-04.png",
+      "/images/interiors/360/montessori-creative-workshop-360-05.png",
+      "/images/interiors/360/montessori-collaborative-zone-360-06.png",
+    ],
+  },
+  "keynote-auditorium-3d": {
+    year: 2026,
+    background: "A signature corporate auditorium and keynote theater featuring a striking undulating parametric acoustic timber ceiling, multi-level presenter stage with panoramic downtown skyline views, and ergonomic tiered seating.",
+    challenges: "Modeling complex curved parametric acoustic baffles with precision light bounce simulations, balancing ambient auditorium illumination with high-lumen keynote presentation displays.",
+    outcome: "Set a new global benchmark in institutional auditorium architecture, generating widespread industry coverage and securing flagship client keynote event reservations.",
+    metrics: [
+      { label: "Seating Capacity", value: "350 Guests" },
+      { label: "Acoustic Clarity (STI)", value: "0.82" },
+      { label: "Skyline Viewing Angle", value: "160°" },
+      { label: "Energy Standard", value: "LEED Gold" },
+    ],
+    gallery: [
+      "/images/interiors/360/auditorium-skyline-view-360-01.png",
+      "/images/interiors/360/auditorium-stage-podium-360-02.png",
+      "/images/interiors/360/auditorium-keynote-amphitheater-360-03.png",
+      "/images/interiors/360/auditorium-executive-hall-360-04.png",
+      "/images/interiors/360/auditorium-conference-suite-360-05.png",
+    ],
+  },
+  "penthouse-boardroom-3d": {
+    year: 2026,
+    background: "A top-floor executive boardroom and international summit suite featuring a custom boat-shaped conference table, Italian leather executive chairs, curved architectural ceiling bulkheads, and sweeping riverfront skyline views.",
+    challenges: "Achieving photorealistic daytime sunlight simulation through expansive floor-to-ceiling glass curtain walls with accurate reflections and glare suppression on interactive digital presentation screens.",
+    outcome: "Delivered an ultra-prestigious spatial visualization that inspired corporate leadership and served as the definitive architectural blueprint for multinational corporate headquarters.",
+    metrics: [
+      { label: "Boardroom Capacity", value: "24 Executives" },
+      { label: "Panoramic View", value: "270° Riverfront" },
+      { label: "AV Integration", value: "Flush Stealth" },
+      { label: "Executive Rating", value: "100%" },
+    ],
+    gallery: [
+      "/images/interiors/360/penthouse-boardroom-riverview-360-01.png",
+      "/images/interiors/360/penthouse-summit-dais-360-02.png",
+      "/images/interiors/360/penthouse-modern-seminar-360-03.png",
+      "/images/interiors/360/penthouse-executive-council-360-04.png",
+      "/images/interiors/360/penthouse-briefing-room-360-05.png",
+      "/images/interiors/360/penthouse-director-suite-360-06.png",
     ],
   },
   "robotics-warehouse-3d": {
@@ -120,6 +255,57 @@ const detailedProjectsMap: Record<string, Partial<ProjectDetail>> = {
       "/images/portfolio/native3d-2.jpg",
     ],
   },
+  "tuscan-stone-villa-exterior-3d": {
+    year: 2026,
+    background: "Commissioned for a premier European heritage estate developer, this architectural exterior visualization project captures a luxury rustic stone villa complex nestled in Mediterranean countryside. The client required photorealistic exterior environments showing artisanal stone masonry, weathered timber joinery, cobblestone courtyard paving, and lush landscape integration.",
+    challenges: "Simulating weathered natural materials with high-fidelity displacement maps, complex organic foliage shaders for climbing vines and surrounding forest trees, and realistic physical daylighting across varying elevations.",
+    outcome: "Delivered stunning photorealistic 3D architectural CGI exterior renders and immersive 360 panoramic walkthrough assets that accelerated private investor presales and architectural conservation permits.",
+    metrics: [
+      { label: "Material Realism", value: "PBR 8K Textures" },
+      { label: "Environmental Coverage", value: "360° Panoramic" },
+      { label: "Landscape Assets", value: "450+ Plants" },
+      { label: "Investor Approval", value: "100%" },
+    ],
+    gallery: [
+      "/images/exteriors/tuscan-villa-aerial-view.jpg",
+      "/images/exteriors/tuscan-villa-courtyard-360.jpg",
+      "/images/exteriors/tuscan-villa-panoramic-studio.png",
+    ],
+  },
+  "tuscan-villa-courtyard-360": {
+    year: 2026,
+    background: "A ground-level 360-degree panoramic architectural visualization of the central courtyard of the Tuscan stone estate, emphasizing pedestrian sightlines, outdoor living spaces, and natural sunlight interaction with rustic stonework.",
+    challenges: "Achieving seamless 360-degree spherical perspective without distortion of vertical cottage walls while capturing dynamic shadows from surrounding trees and outdoor furnishings.",
+    outcome: "Enabled immersive VR client walkthroughs allowing potential buyers to virtually experience the rustic courtyard ambiance and architectural scale in real time.",
+    metrics: [
+      { label: "Field of View", value: "360° Spherical" },
+      { label: "Lighting Model", value: "Physical Sun & Sky" },
+      { label: "Interactive Fidelity", value: "Real-Time Ready" },
+      { label: "Buyer Satisfaction", value: "98%" },
+    ],
+    gallery: [
+      "/images/exteriors/tuscan-villa-courtyard-360.jpg",
+      "/images/exteriors/tuscan-villa-aerial-view.jpg",
+      "/images/exteriors/tuscan-villa-panoramic-studio.png",
+    ],
+  },
+  "tuscan-villa-estate-panorama-3d": {
+    year: 2026,
+    background: "Environmental architectural study of the stone cottages and courtyard promenade with balanced overcast studio illumination, highlighting material texturing, roof tiling, and architectural volume.",
+    challenges: "Preserving fine textural detail in terracotta roof tiles and irregular stonework under diffuse ambient illumination without losing depth perception.",
+    outcome: "Provided the architectural design team with critical spatial verification for window shutter placements, porch overhangs, and courtyard circulation paths.",
+    metrics: [
+      { label: "Shader Calibration", value: "Diffuse Neutral" },
+      { label: "Geometric Accuracy", value: "Sub-millimeter" },
+      { label: "Design Iterations", value: "Optimized" },
+      { label: "Client Delivery", value: "Sign-Off" },
+    ],
+    gallery: [
+      "/images/exteriors/tuscan-villa-panoramic-studio.png",
+      "/images/exteriors/tuscan-villa-aerial-view.jpg",
+      "/images/exteriors/tuscan-villa-courtyard-360.jpg",
+    ],
+  },
 }
 
 export default function PortfolioDetailPage() {
@@ -129,20 +315,44 @@ export default function PortfolioDetailPage() {
   const baseItem = portfolioItems.find((p) => p.id === actualSlug)
   if (!baseItem) return notFound()
 
-  // Merge with rich custom details
-  const customDetail = detailedProjectsMap[actualSlug] || {}
-  
+  // Resolve parent preset if slug has prefix
+  const getParentKey = (s: string) => {
+    if (s.startsWith("auditorium")) return "keynote-auditorium-3d"
+    if (s.startsWith("command-center")) return "command-center-3d"
+    if (s.startsWith("datacenter")) return "datacenter-cooling-3d"
+    if (s.startsWith("factory")) return "smart-factory-3d"
+    if (s.startsWith("mall")) return "mall-corridor-360"
+    if (s.startsWith("montessori")) return "montessori-learning-3d"
+    if (s.startsWith("penthouse")) return "penthouse-boardroom-3d"
+    if (s.startsWith("lecture-hall")) return "lecture-hall-3d"
+    if (s.startsWith("smart-classroom")) return "smart-classroom-3d"
+    if (s.startsWith("broadcast-studio")) return "broadcast-studio-3d"
+    if (s.startsWith("art-gallery")) return "contemporary-gallery-3d"
+    if (s.startsWith("tuscan-villa")) return "tuscan-stone-villa-exterior-3d"
+    return null
+  }
+
+  const parentKey = getParentKey(actualSlug)
+  const parentDetail = parentKey ? detailedProjectsMap[parentKey] : null
+  const customDetail = detailedProjectsMap[actualSlug] || parentDetail || {}
+
+  // Build smart gallery: current image first, then sibling images from parent gallery
+  const siblingGallery = parentDetail?.gallery || []
+  const resolvedGallery = customDetail.gallery && customDetail.gallery.length > 1
+    ? customDetail.gallery
+    : Array.from(new Set([baseItem.image, ...siblingGallery]))
+
   const project: ProjectDetail = {
     slug: baseItem.id,
     title: customDetail.title || baseItem.title,
     tagline: customDetail.tagline || baseItem.description,
     category: baseItem.category,
-    year: customDetail.year || 2025,
+    year: customDetail.year || 2026,
     tags: baseItem.tags,
     image: baseItem.image,
     liveUrl: customDetail.liveUrl || baseItem.liveUrl,
-    metrics: customDetail.metrics,
-    gallery: customDetail.gallery || [baseItem.image],
+    metrics: customDetail.metrics || parentDetail?.metrics,
+    gallery: resolvedGallery,
     background: customDetail.background || `${baseItem.title} was engineered by THCoders to solve complex digital challenges through superior design, cutting-edge technology, and rigorous execution.`,
     challenges: customDetail.challenges || `Designing a solution that delivers exceptional visual aesthetics while meeting strict performance, responsiveness, and architectural scalability requirements.`,
     outcome: customDetail.outcome || `Delivered a world-class production product that exceeded stakeholder expectations and established new industry benchmarks in user experience and engineering quality.`,
@@ -235,7 +445,7 @@ export default function PortfolioDetailPage() {
               src={project.image}
               alt={project.title}
               fill
-              className="object-contain"
+              className="object-cover object-center"
               priority
             />
           </motion.div>
