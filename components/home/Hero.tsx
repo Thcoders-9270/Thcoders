@@ -124,15 +124,15 @@ export function Hero() {
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-100/90 border border-zinc-200/80 px-3 py-1 text-xs font-bold text-zinc-800 shadow-2xs hover:bg-white hover:border-zinc-300 transition-all">
                   <Cpu className="h-3 w-3 text-purple-600" /> AI Agents &amp; RAG
                 </span>
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-100/90 border border-zinc-200/80 px-3 py-1 text-xs font-bold text-zinc-800 shadow-2xs hover:bg-white hover:border-zinc-300 transition-all">
-                  <Layers className="h-3 w-3 text-pink-600" /> 3D CGI &amp; Spatial
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-zinc-100/90 border border-amber-300/80 bg-amber-50/50 px-3 py-1 text-xs font-bold text-amber-900 shadow-2xs hover:bg-white hover:border-amber-400 transition-all">
+                  <Layers className="h-3 w-3 text-amber-600" /> 3D Models, Toys &amp; CGI
                 </span>
               </div>
             </motion.div>
 
             {/* Description */}
             <motion.p variants={itemVariants} className="text-sm sm:text-base leading-relaxed text-zinc-600 max-w-xl">
-              From photorealistic 3D web experiences to autonomous AI agent systems and high-throughput mobile apps, THCoders delivers end-to-end technical superiority and high-conversion design.
+              From moveable toys, custom 3D models, and photorealistic architectural CGI to autonomous AI agents and high-throughput mobile apps, THCoders delivers end-to-end technical superiority and high-conversion design.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -192,6 +192,24 @@ export function Hero() {
               
               {/* Backing Ambient Radial Glow Effect */}
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.14),rgba(234,88,12,0.12),transparent_70%)] rounded-full blur-2xl" />
+
+              {/* Floating Top-Left Glass Card: 3D Architectural CGI */}
+              <motion.div
+                animate={{ y: [5, -5, 5] }}
+                transition={{ duration: 5.6, repeat: Infinity, ease: "easeInOut", delay: 0.2 }}
+                className="absolute -top-3 -left-6 z-20 flex items-center gap-3 rounded-2xl bg-white/95 backdrop-blur-xl border border-zinc-200/90 px-4 py-2.5 shadow-xl shadow-zinc-950/5 select-none hover:scale-105 transition-transform"
+              >
+                <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-amber-50 text-amber-600 shadow-xs">
+                  <Layers className="h-4 w-4" />
+                </div>
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-1.5">
+                    <span className="h-2 w-2 rounded-full bg-amber-500" />
+                    <span className="text-xs font-extrabold text-zinc-900">360° Architectural CGI</span>
+                  </div>
+                  <span className="text-[10px] font-semibold text-zinc-500">Unreal Engine 5 &amp; 8K Panoramas</span>
+                </div>
+              </motion.div>
 
               {/* Floating Top-Right Glass Card: Performance & Uptime */}
               <motion.div

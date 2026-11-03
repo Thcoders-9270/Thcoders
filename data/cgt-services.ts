@@ -32,6 +32,16 @@ export const categorizedServices: ServiceCategory[] = [
     ],
   },
   {
+    title: "3D & Spatial Design",
+    items: [
+      { id: "3d-toys-models", title: "3D Models & Moveable Toys", description: "Articulated toys, action figures & rigging", icon: "/icons/tech/blender.svg", href: "/services/3d-design" },
+      { id: "3d-interior", title: "3D Interior Visualization", description: "Photorealistic 360° architectural interiors", icon: "/icons/tech/blender.svg", href: "/portfolio?category=3D+Interior+Visualization" },
+      { id: "3d-exterior", title: "3D Exterior Visualization", description: "Estates, facades & landscape CGI", icon: "/icons/tech/unreal-engine.svg", href: "/portfolio?category=3D+Exterior+Visualization" },
+      { id: "ue5-cgi", title: "Unreal Engine 5 Pipelines", description: "Nanite, Lumen & cinematic walkthroughs", icon: "/icons/tech/unreal-engine.svg", href: "/services/unreal-dev" },
+      { id: "arvr-3d", title: "AR/VR & Real-Time 3D", description: "Interactive 3D tours & spatial computing", icon: "/icons/tech/unity.svg", href: "/portfolio?category=3D+AR/VR" },
+    ],
+  },
+  {
     title: "AI & Integrations",
     items: [
       { id: "openai", title: "ChatGPT/OpenAI", description: "LLM integration & intelligence", icon: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/langchain_icon.png", href: "/services/openai-integration" },

@@ -112,6 +112,120 @@ const specificDetails: Record<string, Partial<ServiceDetail>> = {
       { question: "Does React Native perform as well as native iOS/Android?", answer: "With modern architectures (Hermes engine, JSI, and Reanimated 3), React Native achieves smooth 60fps native performance while cutting development costs in half." },
       { question: "Can you publish and maintain our apps on the App Store and Google Play?", answer: "Yes, we handle the entire release lifecycle including certs, store guidelines, review approvals, and ongoing updates." }
     ]
+  },
+  "3d-interior": {
+    headline: "Photorealistic 3D Interior CGI, Architectural Staging & 360° Panoramas",
+    longDescription: "Bring architectural floor plans and interior spaces to life with hyper-realistic CGI. Our senior 3D artists with 7+ years of experience craft physically accurate materials, realistic light bounces, and luxury interior staging for real estate developers, interior designers, and commercial enterprises.",
+    stats: [
+      { value: "76+", label: "360° Interior Renders" },
+      { value: "8K UHD", label: "Equirectangular Resolution" },
+      { value: "7+ Yrs", label: "CGI & Raytracing Mastery" },
+      { value: "100%", label: "VR & Tour Compatible" },
+    ],
+    capabilities: [
+      { title: "360° Equirectangular Panoramas", description: "Immersive spherical renders ready for WebGL tour engines, Meta Quest, Apple Vision Pro, and Matterport.", tag: "Virtual Tours" },
+      { title: "Physically Based Rendering (PBR)", description: "Accurate light refractions, true-to-life surface roughness, luxury fabric texturing, and realistic wood grain.", tag: "Materiality" },
+      { title: "Commercial & Institutional Staging", description: "Auditoriums, broadcast studios, executive boardrooms, and command centers tailored to real-world dimensions.", tag: "Commercial CGI" },
+      { title: "Custom Furniture & Lighting Fixtures", description: "High-poly 3D modeling of bespoke designer furniture, chandeliers, and custom architectural elements.", tag: "3D Modeling" },
+      { title: "Daylight & Dusk Mood Studies", description: "Accurate sun positioning, circadian lighting sequences, and ambient night scene simulations.", tag: "Lighting Studies" },
+      { title: "Interactive Web 3D Embeds", description: "Optimized GLTF/GLB models and Three.js scenes for interactive web exploration directly in browsers.", tag: "Web 3D" },
+    ],
+    technologies: ["3ds Max", "V-Ray", "Corona Renderer", "Blender", "Unreal Engine 5", "Three.js", "Substance Painter", "Photoshop"],
+    faqs: [
+      { question: "What files do you need to begin a 3D interior project?", answer: "We can work from CAD floor plans (.dwg), Revit/BIM models, PDF blueprints, 2D sketches, or material moodboards." },
+      { question: "Are your 360 renders compatible with virtual tour platforms?", answer: "Yes, our renders are formatted as standard equirectangular panoramas up to 8K, fully compatible with Kuula, Matterport, 3DVista, and custom WebGL viewers." },
+      { question: "What is your typical delivery timeframe for interior CGI renders?", answer: "Initial drafts and clay renders are delivered in 3-5 business days, with final 8K polished renders within 7-10 business days depending on room complexity." }
+    ]
+  },
+  "3d-exterior": {
+    headline: "High-Impact Architectural Exterior CGI, Masterplans & Environmental Landscapes",
+    longDescription: "Captivate prospective buyers, city planning boards, and investors with breathtaking exterior 3D architectural renders. We create photorealistic facade elevations, lush landscape foliage, masterplan developments, and dramatic day-to-dusk lighting sequences.",
+    stats: [
+      { value: "8K UHD", label: "Render Precision" },
+      { value: "7+ Yrs", label: "Architectural CGI Experience" },
+      { value: "360°", label: "Aerial & Landscape Coverage" },
+      { value: "100%", label: "Planning Board Ready" },
+    ],
+    capabilities: [
+      { title: "Masterplan & Estate Elevations", description: "Large-scale residential communities, luxury villas, and commercial masterplans with contextual surrounding terrain.", tag: "Masterplans" },
+      { title: "Foliage & Landscape Architecture", description: "Botanically accurate vegetation, trees, water bodies, and seasonal atmospheric environmental effects.", tag: "Landscaping" },
+      { title: "Aerial & Drone Match CGI", description: "Seamlessly compositing 3D architectural models into real-world drone photography and site topography.", tag: "Photo-Matching" },
+      { title: "Day, Dusk & Golden Hour Studies", description: "Dramatic lighting simulations demonstrating architectural beauty across varying natural times of day.", tag: "Atmosphere" },
+      { title: "Material & Facade Detailing", description: "High-resolution architectural brickwork, glass reflections, curtain walls, and composite metal panels.", tag: "Facade Detailing" },
+      { title: "Cinematic Exterior Walkthroughs", description: "4K camera flythroughs and cinematic architectural animation trailers for high-stakes marketing launches.", tag: "Animation" },
+    ],
+    technologies: ["Unreal Engine 5", "3ds Max", "V-Ray", "Blender", "Lumion", "Forest Pack", "Substance Designer"],
+    faqs: [
+      { question: "Can you match local geographical surroundings and site topography?", answer: "Yes, we integrate GIS site data, satellite elevation models, and drone survey footage to ensure pinpoint environmental accuracy." },
+      { question: "Can we request revisions for materials and facade finishes?", answer: "Yes, our milestone workflow includes clay preview approvals, material selection check-ins, and final illumination polish rounds." }
+    ]
+  },
+  "ue5-cgi": {
+    headline: "Unreal Engine 5 Real-Time Walkthroughs, Lumen Illumination & Spatial Digital Twins",
+    longDescription: "Step inside your architectural projects before ground is broken. Leveraging Unreal Engine 5's revolutionary Lumen dynamic global illumination and Nanite geometry, we engineer real-time interactive walkthroughs and digital twins for desktop, VR, and pixel streaming.",
+    stats: [
+      { value: "60fps", label: "Real-Time Framerate" },
+      { value: "Lumen", label: "Dynamic Global Illumination" },
+      { value: "Nanite", label: "Micro-Polygon Geometry" },
+      { value: "Web Stream", label: "Pixel Streaming Ready" },
+    ],
+    capabilities: [
+      { title: "Real-Time Interactive Exploration", description: "Clients can walk freely through interior and exterior spaces, toggling materials, lighting, and time of day in real-time.", tag: "Interactivity" },
+      { title: "Lumen Global Illumination", description: "Hyper-realistic indirect lighting and infinite bounces that respond dynamically without pre-baked lightmaps.", tag: "Real-Time Lighting" },
+      { title: "Virtual Reality (VR) Support", description: "Native Meta Quest and PC VR headset support for true 1:1 human scale architectural immersion.", tag: "VR Immersion" },
+      { title: "Pixel Streaming to Web Browsers", description: "Run high-end UE5 scenes on cloud GPUs and stream directly to client web browsers with zero downloads.", tag: "Cloud Streaming" },
+    ],
+    technologies: ["Unreal Engine 5.4", "Lumen", "Nanite", "MetaSound", "Chaos Physics", "WebRTC Pixel Streaming", "Blender"],
+    faqs: [
+      { question: "Can clients view the Unreal Engine experience without a gaming PC?", answer: "Yes! We deploy Pixel Streaming solutions that allow anyone on a laptop, iPad, or mobile browser to stream the live 3D experience with zero hardware requirements." }
+    ]
+  },
+  "3d-design": {
+    headline: "Custom 3D Models, Moveable Articulated Toys & Spatial CGI",
+    longDescription: "We engineer high-fidelity 3D models, moveable and articulated toys with functional mechanical joints, collectible action figures, character rigging, and photorealistic architectural CGI. Whether designing functional joints for toy manufacturing, 3D printing prototypes, or immersive real-time spatial assets, our senior 3D artists deliver unmatched precision.",
+    stats: [
+      { value: "100%", label: "Moveable Joint Precision" },
+      { value: "3D Print", label: "Production & Mold Ready" },
+      { value: "7+ Yrs", label: "Senior 3D Artists" },
+      { value: "8K UHD", label: "CGI & Render Quality" },
+    ],
+    capabilities: [
+      { title: "Moveable Toys & Articulated Action Figures", description: "Engineering ball-and-socket joints, hinge mechanics, swivel articulations, and tolerances for functional moveable toys.", tag: "Toy Design" },
+      { title: "Custom 3D Character & Creature Modeling", description: "High-detail digital sculpting, organic texturing, and stylized character modeling for collectibles, toys, and games.", tag: "Character CGI" },
+      { title: "Skeletal Rigging & Joint Mechanics", description: "Full bone hierarchies, inverse kinematics (IK), and skin weighting so toys and character models move naturally.", tag: "Rigging" },
+      { title: "3D Printing & Tooling Preparation", description: "Watertight STL/OBJ mesh generation, split-part keying, hollow-wall thickness optimization, and mold tolerances.", tag: "Manufacturing" },
+      { title: "Architectural Interior & Exterior CGI", description: "Photorealistic rendering for commercial, residential, and institutional developments.", tag: "Architecture" },
+      { title: "360° Equirectangular Panoramas", description: "Virtual tour panoramas compatible with all standard VR and web viewers.", tag: "Panoramas" },
+    ],
+    technologies: ["Blender", "ZBrush", "3ds Max", "Unreal Engine 5", "V-Ray", "Substance Painter", "Fusion 360", "Three.js"],
+    faqs: [
+      { question: "Can you design moveable toys with functional joints and articulation?", answer: "Yes! We specialize in designing functional articulations including ball-and-socket joints, hinge joints, ratchet mechanisms, and keyed assembly parts optimized for injection molding or resin 3D printing." },
+      { question: "Can you provide files ready for 3D printing and manufacturing?", answer: "Absolutely. We supply watertight STL, OBJ, or STEP files with verified wall thicknesses, key pegs, and pre-hollowed parts ready for rapid prototyping and factory tooling." },
+      { question: "What software and formats do you use for 3D models and toys?", answer: "We work in Blender, ZBrush, and 3ds Max, delivering in .STL, .OBJ, .FBX, .GLTF, and STEP formats complete with full PBR textures and rigging if required." }
+    ]
+  },
+  "3d-toys-models": {
+    headline: "Custom 3D Models, Moveable Articulated Toys & Character Rigging",
+    longDescription: "From collectible action figures with articulated ball-and-socket joints to functional moveable toys and detailed character sculpts. We handle concept modeling, mechanical joint design, skeletal rigging, and manufacturing-ready 3D print file prep.",
+    stats: [
+      { value: "100%", label: "Articulated Joint Accuracy" },
+      { value: "3D Print", label: "Watertight STL / STEP" },
+      { value: "7+ Yrs", label: "Sculpting & Rigging" },
+      { value: "Factory", label: "Mold & Tooling Ready" },
+    ],
+    capabilities: [
+      { title: "Functional Articulated Joint Design", description: "Ball joints, hinges, swivels, and click-joints designed with tight tolerances for real-world movement.", tag: "Joint Engineering" },
+      { title: "Toy & Collectible Sculpting", description: "Stylized and realistic action figures, vinyl toys, mascots, and tabletop miniatures.", tag: "Sculpting" },
+      { title: "Rigging for Animation & Pose Testing", description: "Digital skeleton setup with inverse kinematics to test range of motion before manufacturing.", tag: "Rigging" },
+      { title: "Part Splitting & Keying", description: "Dividing multi-part toys with interlocking keys and pegs for easy assembly and seam concealment.", tag: "Part Tooling" },
+      { title: "Color & Texture Painting", description: "Hand-painted textures, decal placement, and Pantone color specs for production.", tag: "Texturing" },
+      { title: "Rapid Prototyping Support", description: "Test prints, clearance adjustments, and shrink factor compensation.", tag: "Prototyping" },
+    ],
+    technologies: ["Blender", "ZBrush", "Fusion 360", "Substance Painter", "KeyShot", "STL / STEP"],
+    faqs: [
+      { question: "Can you design custom moveable toys from rough sketches or concept art?", answer: "Yes, we can take rough sketches, 2D character sheets, or reference images and turn them into fully articulated, 3D-printable moveable toy prototypes." },
+      { question: "Do you design the internal joints so parts don't become loose?", answer: "Yes, we engineer friction fits, ratchet teeth, and ball-socket tolerances with proper material clearance to ensure tight, durable joint articulation." }
+    ]
   }
 };
 

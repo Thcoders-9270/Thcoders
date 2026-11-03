@@ -9,6 +9,7 @@ import { PricingSection } from "@/components/home/PricingSection";
 import { Testimonials } from "@/components/home/Testimonials";
 import { TechStack } from "@/components/home/TechStack";
 import { AIDevelopmentSection } from "@/components/home/AIDevelopmentSection";
+import { ThreeDShowcaseSection } from "@/components/home/ThreeDShowcaseSection";
 import { DevOpsSection } from "@/components/home/DevOpsSection";
 import { FAQ } from "@/components/home/FAQ";
 import { CTA } from "@/components/home/CTA";
@@ -28,6 +29,7 @@ export default function Home() {
       <HorizontalPortfolio />
       <AnimatedStats />
       <AIDevelopmentSection />
+      <ThreeDShowcaseSection />
       <DevOpsSection />
       <PricingSection />
       <Testimonials />

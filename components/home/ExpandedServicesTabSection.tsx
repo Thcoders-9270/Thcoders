@@ -47,7 +47,7 @@ export function ExpandedServicesTabSection() {
             transition={{ delay: 0.1 }}
             className="mt-4 text-base sm:text-lg text-zinc-600 leading-relaxed"
           >
-            From modern web frameworks to native mobile architectures, AI integrations, and cloud infrastructure.
+            From modern web frameworks and native mobile architectures to photorealistic 3D architectural CGI, AI integrations, and cloud systems.
           </motion.p>
         </div>
 

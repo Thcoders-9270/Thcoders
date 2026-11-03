@@ -11,7 +11,7 @@ import { LogoMarquee } from "@/components/shared/LogoMarquee"
 import { CTA } from "@/components/home/CTA"
 import { stats } from "@/data/stats"
 import { FeaturedLeaderCard } from "@/components/shared/FeaturedLeaderCard"
-const industries = ["Fintech", "AI", "Cybersecurity", "Healthcare", "Ecommerce", "Blockchain"]
+const industries = ["Fintech", "AI", "Real Estate & Architecture", "3D CGI & Spatial Computing", "Cybersecurity", "Healthcare", "Ecommerce", "Blockchain"]
 
 export default function AboutPage() {
   return (
@@ -30,10 +30,10 @@ export default function AboutPage() {
                 We partner with forward-thinking brands to create <span className="text-gradient">compelling stories</span>
               </h2>
               <p className="mt-6 text-base leading-relaxed text-zinc-600">
-                Founded in 2025, THCoders is a premium design and development agency specializing in crafting digital products that resonate deeply with users. We streamline the design workflow by breaking down complex projects into manageable, bite-sized tasks.
+                Founded in 2025, THCoders is a premium software, AI, and 3D architectural visualization agency specializing in crafting high-impact digital products and spatial experiences that resonate deeply with users. We streamline complex workflows into elegant, manageable, and measurable deliverables.
               </p>
               <p className="mt-4 text-base leading-relaxed text-zinc-600">
-                Our team brings together skilled developers, designers, and strategists across multiple technologies to deliver comprehensive solutions that drive real business impact.
+                Our team brings together senior software engineers, 3D architectural CGI specialists with 7+ years of photorealistic raytracing expertise, AI researchers, and brand strategists to deliver unified digital solutions that drive measurable business impact.
               </p>
             </AnimatedSection>
 
@@ -140,7 +140,7 @@ export default function AboutPage() {
                       <h4 className="text-base sm:text-lg font-bold text-zinc-900 group-hover:text-orange-600 transition-colors duration-200">
                         {member.name}
                       </h4>
-                      <p className="mt-1.5 text-xs sm:text-sm text-zinc-500 line-clamp-2 leading-relaxed">
+                      <p className="mt-1.5 text-xs sm:text-sm text-zinc-500 leading-relaxed">
                         {member.bio}
                       </p>
                     </div>

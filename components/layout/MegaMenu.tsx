@@ -12,9 +12,9 @@ export function MegaMenu({ isOpen }: { isOpen: boolean }) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
-          className="absolute top-full left-0 w-max max-w-5xl mt-2 rounded-2xl border border-zinc-200 bg-white shadow-2xl p-6"
+          className="absolute top-full left-1/2 -translate-x-1/2 w-[92vw] max-w-6xl mt-2 rounded-2xl border border-zinc-200 bg-white shadow-2xl p-6"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {categorizedServices.map((category) => (
               <div key={category.title} className="flex flex-col space-y-4">
                 <h3 className="text-sm font-bold text-zinc-900 border-b border-zinc-100 pb-2">

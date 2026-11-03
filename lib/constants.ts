@@ -1,5 +1,5 @@
 export const SITE_NAME = "THCoders";
-export const SITE_DESCRIPTION = "From vision to launch — we code the future. A premium software agency crafting digital products for startups, founders, and ambitious teams.";
+export const SITE_DESCRIPTION = "From vision to launch — we code the future. A premium software and 3D architectural CGI agency crafting high-performance web applications, AI platforms, and photorealistic 3D spatial visualizations for startups, founders, and global brands.";
 export const SITE_URL = "https://thcoders.com";
 export const SITE_EMAIL = "info@thcoders.com";
 export const SITE_PHONE_US = "+1 (555) 123-4567";

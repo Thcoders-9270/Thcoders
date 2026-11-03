@@ -28,6 +28,8 @@ const serviceLinks = [
   { label: "React & Next.js Development", href: "/services/nextjs-development" },
   { label: "Mobile App (iOS & Android)", href: "/services/react-native" },
   { label: "AI & LLM Integrations", href: "/services/openai-integration" },
+  { label: "3D Architectural Visualization", href: "/portfolio?category=3D+Interior+Visualization" },
+  { label: "360° Panoramas & CGI Walkthroughs", href: "/portfolio?category=3D+Exterior+Visualization" },
   { label: "Node.js & Backend Architecture", href: "/services/nodejs-development" },
   { label: "Cloud & AWS DevOps", href: "/services/aws" },
   { label: "UI/UX & Design Systems", href: "/services/ui-ux-design" },

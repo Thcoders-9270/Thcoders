@@ -51,4 +51,19 @@ export const faqItems: FAQItem[] = [
     question: "Do you provide support after project completion?",
     answer: "Yes. We offer ongoing maintenance and support packages to ensure your product remains secure, up-to-date, and performs optimally. This includes bug fixes, updates, performance monitoring, and feature enhancements as needed.",
   },
+  {
+    id: "11",
+    question: "What 3D Architectural Visualization & CGI services do you provide?",
+    answer: "We offer end-to-end 3D architectural visualization including photorealistic interior and exterior CGI renders, 8K equirectangular 360° panoramas, interactive virtual walkthroughs, and real-time Unreal Engine 5 spatial environments. Our senior 3D artists work directly from architectural blueprints, CAD drawings, and design moodboards.",
+  },
+  {
+    id: "12",
+    question: "Are your 360° panoramas compatible with VR headsets and virtual tour software?",
+    answer: "Yes! All of our 360° renders are exported in full equirectangular format at up to 8K resolution, making them seamlessly compatible with Meta Quest, Apple Vision Pro, WebGL tour players, Matterport, and custom web-embedded interactive viewers.",
+  },
+  {
+    id: "13",
+    question: "Do you design custom 3D models and moveable/articulated toys?",
+    answer: "Yes! We specialize in modeling custom 3D assets, collectible characters, and moveable toys engineered with functional mechanical joints (ball-and-socket, hinges, swivel pins, and ratchets). We provide complete skeletal rigging for digital animation as well as watertight STL/STEP files with engineered tolerances ready for 3D printing, rapid prototyping, and factory mold production.",
+  },
 ];

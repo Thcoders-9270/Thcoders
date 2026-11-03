@@ -183,7 +183,7 @@ export function WhyUsSection() {
                         <h4 className="text-base sm:text-lg font-bold text-zinc-900 group-hover:text-orange-600 transition-colors">
                           {member.name}
                         </h4>
-                        <p className="mt-1.5 text-xs sm:text-sm text-zinc-500 line-clamp-2 leading-relaxed">
+                        <p className="mt-1.5 text-xs sm:text-sm text-zinc-500 leading-relaxed">
                           {member.bio}
                         </p>
                       </motion.div>

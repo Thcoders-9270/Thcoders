@@ -31,10 +31,10 @@ export const services: Service[] = [
   },
   {
     id: "3d-design",
-    title: "3D Design & Visualization",
-    description: "High-fidelity 3D modeling, animation, and rendering for immersive worlds, environments, and assets.",
-    icon: "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/unity.png",
-    features: ["3D Modeling & Sculpting", "Texturing & Shading", "Animation & Rigging", "Architectural Visualization", "Product Visualization", "Real-Time Rendering"],
+    title: "3D Models, Moveable Toys & Spatial CGI",
+    description: "Custom 3D modeling for moveable and articulated toys with mechanical joints, collectible figures, character rigging, and photorealistic architectural CGI.",
+    icon: "/icons/tech/blender.svg",
+    features: ["Moveable & Articulated Toys", "Mechanical Joint Engineering", "Character Modeling & Rigging", "3D Print-Ready Prototyping", "Photorealistic Architectural CGI", "360° Virtual Panoramas"],
   },
   {
     id: "ecommerce-cms",

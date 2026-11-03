@@ -20,11 +20,22 @@ const technologies = [
   { name: "PostgreSQL", category: "Database", icon: "/icons/tech/postgresql.svg" },
   { name: "Redis", category: "Database", icon: "/icons/tech/redis.svg" },
   { name: "GraphQL", category: "API" },
-  { name: "Figma", category: "Design", icon: "/icons/tech/figma.svg" },
-  { name: "Blender", category: "3D", icon: "/icons/tech/blender.svg" },
+  { name: "UI/UX Design", category: "UI/UX & Design", icon: "/icons/ui.png" },
+  { name: "Figma", category: "UI/UX & Design", icon: "/icons/tech/figma.svg" },
+  { name: "Design Systems", category: "UI/UX & Design" },
+  { name: "Wireframing & Prototyping", category: "UI/UX & Design" },
+  { name: "User Research", category: "UI/UX & Design" },
+  { name: "Unreal Engine 5", category: "3D, Models & CGI", icon: "/icons/tech/unreal-engine.svg" },
+  { name: "Blender", category: "3D, Models & CGI", icon: "/icons/tech/blender.svg" },
+  { name: "Moveable Toys & Rigging", category: "3D, Models & CGI" },
+  { name: "3D Character Models", category: "3D, Models & CGI" },
+  { name: "3ds Max", category: "3D, Models & CGI" },
+  { name: "V-Ray", category: "3D, Models & CGI" },
+  { name: "Three.js / WebGL", category: "3D, Models & CGI" },
+  { name: "360° Equirectangular", category: "3D, Models & CGI" },
 ]
 
-const categories = ["Frontend", "Backend", "Mobile", "Game Dev", "AI/ML", "Cloud", "Database", "Design", "3D"]
+const categories = ["Frontend", "Backend", "Mobile", "Game Dev", "AI/ML", "Cloud", "Database", "UI/UX & Design", "3D, Models & CGI"]
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -81,7 +92,7 @@ export function TechStack() {
                       className="inline-flex items-center gap-1.5 rounded-lg bg-white/80 px-3 py-1.5 text-sm font-medium text-zinc-700 border border-zinc-200"
                     >
                       {tech.icon && (
-                        <Image src={tech.icon} alt="" width={16} height={16} className="h-4 w-4" />
+                        <Image src={tech.icon} alt="" width={16} height={16} className="h-4 w-4 object-contain" />
                       )}
                       {tech.name}
                     </span>
